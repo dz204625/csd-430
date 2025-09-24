@@ -38,8 +38,6 @@ public class MovieServlet extends HttpServlet {
         String action = req.getParameter("action");
         if (action == null) action = "list";
         
-        System.out.print(action);
-
         switch (action) {
             case "reset":
                 dao.resetTable();
